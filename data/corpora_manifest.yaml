@@ -1,0 +1,21 @@
+corpora:
+  - id: gdpr_eurlex_pdf
+    kind: pdf_url
+    url: "https://gdpr.eu.org/full/full.pdf"
+    description: "GDPR official EUR-Lex PDF"
+    tags: ["legal", "pdf", "gdpr", "eur-lex"]
+
+  - id: langchain_docs_site
+    kind: sitemap
+    url: "https://docs.langchain.com/sitemap.xml"
+    include_regex: "https://docs\\.langchain\\.com/oss/python/.*"
+    description: "LangChain OSS Python docs (sitemap crawl)"
+    tags: ["docs", "html", "langchain"]
+
+  - id: langchain_github_md
+    kind: github_markdown
+    repo: "langchain-ai/langchain"
+    branch: "master"
+    file_glob_suffix: ".md"
+    description: "LangChain GitHub repo markdown content"
+    tags: ["github", "markdown", "langchain"]

@@ -1,0 +1,19 @@
+splitters:
+  - name: recursive_char
+    type: recursive_character
+    params:
+      chunk_size: [800, 1200]
+      chunk_overlap: [100, 200]
+
+  - name: token_text
+    type: token
+    params:
+      chunk_size: [512, 800, 1200]
+      chunk_overlap: [64, 128]
+      encoding_name: ["cl100k_base"]
+
+  - name: markdown_header_then_recursive
+    type: markdown_header_pipeline
+    params:
+      chunk_size: [800, 1200]
+      chunk_overlap: [100]
