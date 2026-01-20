@@ -1,4 +1,4 @@
-````md
+
 # splitter-bench-rag
 
 Benchmark **LangChain text splitters** end-to-end for real-world RAG:
